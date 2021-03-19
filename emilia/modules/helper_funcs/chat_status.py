@@ -9,6 +9,7 @@ from telegram import error
 
 from emilia import DEL_CMDS, SUDO_USERS, WHITELIST_USERS
 
+from emilia.modules import languages
 
 def can_delete(chat: Chat, bot_id: int) -> bool:
     return chat.get_member(bot_id).can_delete_messages
