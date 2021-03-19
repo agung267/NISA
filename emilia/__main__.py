@@ -16,7 +16,6 @@ from emilia import dispatcher, updater, TOKEN, WEBHOOK, OWNER_ID, DONATION_LINK,
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from emilia.modules import ALL_MODULES
-from emilia.modules.languages import tl
 from emilia.modules.helper_funcs.chat_status import is_user_admin
 from emilia.modules.helper_funcs.misc import paginate_modules
 from emilia.modules.sql import languages_sql as langsql
