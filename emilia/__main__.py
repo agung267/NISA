@@ -150,10 +150,10 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             first_name = update.effective_user.first_name
             buttons = InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="🎉 Add me to your group", url="https://t.me/UserbotindoBot?startgroup=new")],
+                [[InlineKeyboardButton(text="🎉 Add me to your group", url="https://t.me/N_Lydiawati_Bot?startgroup=new")],
                 [InlineKeyboardButton(text="💭 Language", callback_data="main_setlang"), InlineKeyboardButton(text="⚙️ Connect Group", callback_data="main_connect")],
-                [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/userbotindo"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/userbotindocloud")],
-                [InlineKeyboardButton(text="❓ Help", url="https://t.me/UserbotindoBot?start=help"), InlineKeyboardButton(text="💖 Donate", url="http://paypal.me/MoveAngel")]])
+                [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/freindshipindo"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/freindshipindo")],
+                [InlineKeyboardButton(text="❓ Help", url="https://t.me/N_Lydiawati_Bot?start=help"), InlineKeyboardButton(text="💖 Donate", url="http://paypal.me/Agungir")]])
             update.effective_message.reply_text(
                 tl(update.effective_message, PM_START_TEXT).format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 disable_web_page_preview=True,
